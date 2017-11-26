@@ -10,7 +10,7 @@ import path from 'path';
 import expose from './expose';
 var {__dirname} = expose; // eslint-disable-line no-shadow
 
-import dir from 'babel-cli/lib/babel/dir';
+import dir from '@jacksonrayhamilton/babel-cli/lib/babel/dir';
 
 var knownOpts = {
   'watch': Boolean,

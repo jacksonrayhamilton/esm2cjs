@@ -12,9 +12,9 @@
     "prepare": "node --experimental-modules esm2cjs"
   },
   "dependencies": {
-    "babel-cli": "jacksonrayhamilton/babel-cli#4a9bc59",
+    "@jacksonrayhamilton/babel-cli": "6.26.0-414f3c731",
     "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-plugin-transform-es2015-modules-commonjs": "jacksonrayhamilton/babel-plugin-transform-es2015-modules-commonjs#b0b9a88",
+    "@jacksonrayhamilton/babel-plugin-transform-es2015-modules-commonjs": "6.26.0-5536f64fa",
     "glob": "^7.1.2",
     "lodash": "^4.17.4",
     "nopt": "^4.0.1"
