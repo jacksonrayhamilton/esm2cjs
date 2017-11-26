@@ -51,9 +51,9 @@ publish a release, ensuring that your ".js" files are up-to-date with your
 }
 ```
 
-You can customize which files will be compiled by adding a `.esm2cjs` file to
-your package root.  This file contains a newline-delimited list of file globs,
-e.g. a `.esm2cjs` file like:
+You can specify which files will be compiled by adding a `.esm2cjs` file to your
+package root.  This file contains a newline-delimited list of file globs, e.g. a
+`.esm2cjs` file like:
 
 ```
 *.mjs
