@@ -1,2 +1,3 @@
-/esm2cjs.js
+*.js
+!expose.js
 /node_modules/
