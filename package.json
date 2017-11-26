@@ -8,6 +8,7 @@
     "esm2cjs": "./esm2cjs.js"
   },
   "scripts": {
+    "lint": "eslint --ext .mjs .",
     "prepare": "node --experimental-modules esm2cjs"
   },
   "dependencies": {
@@ -17,5 +18,9 @@
     "glob": "^7.1.2",
     "lodash": "^4.17.4",
     "nopt": "^4.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.12.0",
+    "eslint-config-will-robinson": "^1.0.0"
   }
 }
