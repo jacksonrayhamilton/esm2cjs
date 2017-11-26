@@ -8,7 +8,7 @@
     "esm2cjs": "./esm2cjs.js"
   },
   "scripts": {
-    "lint": "eslint --ext .mjs .",
+    "lint": "eslint --ext .mjs,.js .",
     "prepare": "node --experimental-modules esm2cjs"
   },
   "dependencies": {
