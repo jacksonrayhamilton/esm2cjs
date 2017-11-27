@@ -9,11 +9,12 @@ Given a file like `foo.mjs`:
 export default function foo () {}
 ```
 
-Generates a file like `foo.js`:
+Generate a file like `foo.js`:
 
 ```js
 'use strict';
-module.exports = function foo () {};
+function foo () {}
+module.exports = foo;
 ```
 
 If that is your main module, in your `package.json`, you can do:
@@ -24,12 +25,12 @@ If that is your main module, in your `package.json`, you can do:
 }
 ```
 
-Then, if Node supports modules and someone requires or imports your package,
-then `foo.mjs` will be imported, and if Node doesn't support modules, then
-`foo.js` will be imported instead.
+Then, if Node supports modules and someone imports your package, then `import
+'foo'` will load `foo.mjs`, and if Node doesn't support modules, then
+`require('foo')` will load `foo.js` instead.
 
-What you're doing is shipping a native ES module (W00T the future is NOW) yet
-still offering a fallback for not-yet-upgraded environments.
+Now you can distribute a native ES module _and_ offer a fallback for
+not-yet-upgraded, CommonJS-only environments.
 
 ## Usage
 
@@ -82,8 +83,8 @@ directory/
 
 ## Extending
 
-esm2cjs uses Babel 6 under the hood.  This means that if you want to use syntax
-extensions (e.g. TC39 proposals, JSX, etc) in your code, you can do that by
-adding a [`.babelrc`][] file to your project.
+esm2cjs uses Babel 6 under the hood, so if you want to use syntax extensions
+(e.g. TC39 proposals, JSX, etc) in your code, you can do that by adding a
+[`.babelrc`][] file to your project.
 
 [`.babelrc`]: https://babeljs.io/docs/usage/babelrc/
