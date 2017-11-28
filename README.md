@@ -80,11 +80,3 @@ directory/
     ├── cli.js
     └── cli.mjs
 ```
-
-## Extending
-
-esm2cjs uses Babel 6 under the hood, so if you want to use syntax extensions
-(e.g. TC39 proposals, JSX, etc) in your code, you can do that by adding a
-[`.babelrc`][] file to your project.
-
-[`.babelrc`]: https://babeljs.io/docs/usage/babelrc/
