@@ -28,7 +28,7 @@ try {
 }
 var configFileGlobs = [];
 if (configFileContents) {
-  configFileGlobs.push(...configFileContents.split('\n'));
+  configFileGlobs = configFileContents.split('\n');
 }
 
 var errors = [];
